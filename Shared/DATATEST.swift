@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
         knn.train(training_samples)
         
-        let prediction: knn_certainty_label_pair = knn.predict([1.0, 1.75, 2.0, 2.5, 2.0])
+q        let prediction: knn_certainty_label_pair = knn.predict([1.0, 1.75, 2.0, 2.5, 2.0])
         
         print("predicted " + prediction.label, "with ", prediction.probability*100,"% certainty")
         
